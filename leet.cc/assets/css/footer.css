@@ -1,0 +1,10 @@
+div#footer {
+	height:40px;
+	line-height:40px;
+	padding:0px 20px;
+	font-size:12px;
+	text-align:right
+}
+div#footer a {
+	color:#0088AE
+}

@@ -1,0 +1,482 @@
+@import url("resetter.css");
+@import url("discord.css");
+
+hr {
+	width:100px;
+	height:1px;
+	background:#ccc;
+	margin-top:-40px;
+	margin-bottom:-20px;
+	border:none;
+}
+
+
+
+section#main {
+	position:relative;
+	height:100%;
+	min-height:730px;
+	background:url('../images/thirstySheep.jpg');
+	background-size:cover;
+	background-position:center center;
+	z-index:45
+}
+section#main #tint1 {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:rgba(43,43,43,0.6);
+}
+section#main #tint2 {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background:rgba(43,43,43,0);
+	z-index:4;
+}
+section#main #downArrow > div {
+	position:absolute;
+	background:url('../images/downArrow.png');
+	z-index:5;
+	width:43px;
+	height:24px;
+	bottom:30px;
+	left:50%;
+	margin-left:-22px;
+	cursor:pointer;
+	opacity:0.5;
+	animation: fadeIn 0.6s infinite alternate;
+}
+@keyframes fadeIn { 
+	from { opacity: 1; } 
+}
+section#main #textBase1 {
+	color:#fff;
+	position:absolute;
+	width:450px;
+	z-index:100;
+	top:35%;
+	left:20%;
+}
+section#main #textBase1 h1 {
+	font-size:30px;
+}
+section#main #textBase1 span {
+	display:block;
+	float:right;
+	clear:right;
+	margin-top:30px;
+	font-size:12px;
+}
+section#main #textBase1 button {
+	margin-top:-12px;
+	margin-left:10px;
+	font-size:15px;
+	float:right;
+}
+section#main #mobileMockup {
+	background:url('../images/samsung.png');
+	background-size:cover;
+	width:290px;
+	height:591px;
+	position:absolute;
+	right:20%;
+	top:50%;
+	margin-top:-295px;
+}
+section#main #mobileMockup > #slides {
+	position:relative;
+	top:73px;
+	left:20px;
+	width:251px;
+	height:443px;
+}
+section#main #mobileMockup > #slides > div {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-position:center center !important;
+	background-size:cover !important;
+}
+section#main #mobileMockup > #slides > #s1 {
+	background:url('../images/Phone/Phone2.png');
+}
+
+@media(max-width:999px) {
+	section#main #textBase1 {
+		width:90%;
+		left:5%;
+		top:150px;
+		text-align:center;
+	}
+	section#main #textBase1 span {
+		float:none;
+	}
+	section#main #textBase1 button {
+		float:none;
+		display:block;
+		margin:10px auto;
+	}
+	section#main #mobileMockup {
+		width:290px;
+		height:591px;
+		position:absolute;
+		right:50%;
+		margin-right:-145px;
+		top:675px;
+		margin-top:-295px;
+	}
+	section#main {
+		min-height:990px;
+	}
+}
+
+
+
+
+
+
+
+section.screen {
+	color:#333;
+	padding:60px 0px;
+}
+section.screen > div > h1 {
+	text-align:center;
+	font-size:22px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom:20px;
+}
+
+section.screen > div > p {
+	text-align:center;
+	font-size:13px;
+	
+}
+
+
+
+
+
+
+section#features {
+
+
+}
+section#features #featurette {
+	position:relative;
+	width:90%;
+	left:5%;
+	margin-top:25px;
+	clear:both;
+	overflow:hidden;
+}
+section#features #featurette > div {
+	width:33.33333333%;
+	display:inline-block;
+	float:left;
+	margin:0px;
+	margin-top:15px;
+}
+section#features #featurette > div > div {
+	position:relative;
+	width:80%;
+	left:10%;
+	margin-top:15px;
+	font-weight:400;
+}
+section#features #featurette > div > div i {
+	font-size:25px;
+	vertical-align:middle;
+	margin-right:5px;
+}
+section#features #featurette > div > div p {
+	margin-top:10px;
+	font-size:13px;
+	line-height:20px;
+	height:105px;
+	overflow:hidden;
+	font-weight:300;
+}
+@media(max-width:999px) {
+	section#features #featurette {
+		width:100%;
+		left:0%;
+	}
+}
+@media(max-width:767px) {
+	section#features #featurette > div {
+		width:50%;
+	}
+}
+@media(max-width:479px) {
+	section#features #featurette > div {
+		width:100%;
+	}
+}
+
+
+
+
+section#download {
+	background:url('../images/zombieRekt.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center 10%;
+	padding:50px 0px;
+	text-align:center;
+	position:relative;
+}
+section#download > .background {
+	background:rgb(43,43,43);
+	opacity:0.7;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+}
+section#download .container {
+	color:#fff;
+	position:relative;
+	z-index:2;
+}
+section#download p.links {
+	margin-top:20px;
+}
+section#download p.links button {
+	margin:0px 10px;
+	width:180px;
+	font-size:14px;
+}
+section#download p.links button > i {
+	font-size:20px;
+	margin-right:8px;
+}
+section#download p.links button > span {
+	vertical-align:1px;
+}
+@media(max-width:479px) {
+	section#download p.links button {
+		display:block;
+		left:50%;
+		margin-left:-90px;
+		margin-top:15px;
+		
+	}
+}
+
+
+
+
+
+@font-face {
+	font-family:MunroSmall;
+	src:url('../fonts/MunroSmall.ttf');
+}
+section#servers {
+	text-align:center;
+}
+section#servers #list {
+	width:90%;
+	max-width:500px;
+	display:inline-block;
+	margin:auto;
+}
+section#servers #list > div {
+	height:45px;
+	width:100%;
+	background:url('../images/listCore.png');
+	background-size:1px 45px;
+	position:relative;
+	font-family: 'MunroSmall';
+	font-smooth: never;
+	-webkit-font-smoothing:none;
+	color:#fff;
+	margin-top:-2px;
+}
+section#servers #list > div:before {
+	content:'';
+	height:45px;
+	width:3px;
+	background:url('../images/listLeft.png');
+	background-size:3px 45px;
+	left:0px;
+	position:absolute;
+}
+section#servers #list > div:after {
+	content:'';
+	height:45px;
+	width:3px;
+	background:url('../images/listRight.png');
+	background-size:3px 45px;
+	right:0px;
+	position:absolute;
+}
+section#servers #list > div .title {
+	font-size:20px;
+	position:absolute;
+	top:4px;
+	left:20px;
+	right:70px;
+	text-align:left;
+	overflow:hidden;
+}
+section#servers #list > div .slots {
+	position:absolute;
+	font-size:20px;
+	top:4px;
+	right:20px;
+	color:#999;
+}
+section#servers #list > div .ip {
+	position:absolute;
+	font-size:13px;
+	top:25px;
+	left:20px;
+	color:#999;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+section#servers #list > div .ip > .bright {
+	color:#ccc;
+}
+@media(max-width:767px) {
+	section#servers div#containers > a > img {
+		width:100%;
+	}
+}
+
+
+
+section#copay {
+	background:url('../images/zombieRekt.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center 10%;
+	padding:50px 0px;
+	text-align:center;
+	position:relative;
+}
+section#copay > .background {
+	background:rgb(43,43,43);
+	opacity:0.7;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index:1;
+}
+section#copay .container {
+	color:#fff;
+	position:relative;
+	z-index:2;
+}
+section#copay p.links {
+	margin-top:20px;
+}
+section#copay p.links button {
+	margin:0px 10px;
+	width:180px;
+	font-size:14px;
+}
+section#copay p.links button > i {
+	font-size:20px;
+	margin-right:8px;
+}
+section#copay p.links button > span {
+	vertical-align:1px;
+}
+@media(max-width:479px) {
+	section#copay p.links button {
+		display:block;
+		left:50%;
+		margin-left:-90px;
+		margin-top:15px;
+		
+	}
+}
+
+
+
+
+section#faq {
+	
+}
+section#faq > div > p > a {
+	color:rgb(110, 178, 64);
+}
+section#faq .items {
+	margin-top:50px;
+	position:relative;
+	column-count: 3;
+}
+section#faq .items > div {
+	width:90%;
+	margin-left:5%;
+	display:inline-block;
+	margin-top:20px;
+}
+section#faq .items > div > a {
+	color:rgb(110, 178, 64);
+	cursor:pointer;
+}
+section#faq .items > div > a:hover {
+	text-decoration:none;
+}
+section#faq .items > div > a:hover > span {
+	text-decoration:underline
+}
+section#faq .items > div > a:before {
+	content:'»';
+	color:#777;
+	text-decoration:none !important;
+}
+section#faq .items > div > p {
+	margin-top:10px;
+	display:none;
+	line-height:18px;
+	font-size:14px;
+}
+
+
+
+
+section#support {
+	clear:both;
+	overflow:auto;
+	margin-bottom:50px;
+}
+section#support > div > p {
+	margin-bottom:30px;
+}
+section#support > div > div {
+	margin-top:25px;
+	width:50%;
+	float:left;
+}
+section#support > div > div > h1 {
+	font-size:20px;
+	padding-left:35px;
+}
+section#support > div > div > h1 > i {
+	font-size:20px;
+	margin-right:10px;
+	color:#777;
+}
+section#support > div > div > p {
+	margin-top:10px;
+	padding-left:35px;
+	color:#555;
+}
+section#support > div > div > div > a {
+	padding-bottom:35px;
+}
+@media(max-width:767px) {
+	section#support > div > div {
+		margin-top:25px;
+		width:100%;
+		float:left;
+	}
+}

@@ -1,0 +1,89 @@
+@import url("reset.css");
+@import url("menu.css");
+@import url("footer.css");
+@import url("animate.css");
+html, body {
+	height:100% !important;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	background:#f2f2f2;
+}
+div.mm-page {
+	height:100%;
+	min-height:100%;
+}
+.noscroll {
+  height:100%;
+  overflow:hidden;
+}
+
+div.container {
+	width:80%;
+	max-width:1200px;
+	margin:auto;
+	padding-bottom:50px;
+}
+@media(max-width:999px) {
+	div.container {
+		width:90%;
+	}
+}
+
+a {
+	color:inherit;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline
+}
+
+button {
+	background:#77c344;
+	border-radius:3px;
+	color:#fff;
+	border:none;
+	outline:none;
+	padding:0px 30px;
+	height:40px;
+	vertical-align:top;
+	font-size:12px;
+	display:inline-block;
+	position:relative;
+}
+button:hover {
+	text-decoration:none;
+	cursor:pointer;
+}
+button:active {
+	background:#6eb240;
+}
+button.grey {
+	background:#aaa;
+}
+button.grey:hover {
+	background:#a0a0a0;
+}
+
+input[type=submit] {
+	height:30px;
+}
+
+footer {
+	background:rgb(37,37,37);
+	color:#fff;
+	text-align:right;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+footer .container {
+	padding:0px;
+}
+footer h1 {
+	font-size:14px;
+}
+footer span {
+	color:#777;
+	font-size:10px;
+}
